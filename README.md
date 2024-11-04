@@ -55,4 +55,4 @@ This project operates under the MIT License. Please refer to the LICENSE.md file
 
 ## Acknowledgments
 
-- MetaMask Documentation, Solidity and Web3.js Resources, IPFS Documentation, Truffle Framework Guides
+- MetaMask Documentation, Solidity, Web3.js Resources, IPFS Documentation, Truffle Framework Guides
