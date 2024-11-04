@@ -1,4 +1,4 @@
-# DocuChain: Decentralized Document Authentication Using IPFS
+# DocuChain: Decentralized Document Authentication Using IPFS (Pinata)
 
 **VerifiChain** is a cutting-edge solution designed to provide a decentralized platform for authenticating documents by harnessing the capabilities of Blockchain technology and the InterPlanetary File System (IPFS). This system records document hashes on the Blockchain, while securely storing the actual documents on IPFS. This dual-layer approach ensures that documents remain untampered and easily retrievable by authorized users.
 
