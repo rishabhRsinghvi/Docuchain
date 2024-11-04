@@ -1,56 +1,58 @@
-# BlockChain-Based Document Verification with IPFS
+# DocuChain: Decentralized Document Authentication Using IPFS
 
-This project aims to create a secure and decentralized system for document verification using Blockchain and InterPlanetary File System (IPFS) technologies. The system stores the hash of the documents in the Blockchain network and the documents themselves in the IPFS network. This ensures that the documents cannot be tampered with or altered, and they can be easily retrieved and verified by authorized parties.
+**VerifiChain** is a cutting-edge solution designed to provide a decentralized platform for authenticating documents by harnessing the capabilities of Blockchain technology and the InterPlanetary File System (IPFS). This system records document hashes on the Blockchain, while securely storing the actual documents on IPFS. This dual-layer approach ensures that documents remain untampered and easily retrievable by authorized users.
 
-## Features
+## Key Features
 
-- Secure document verification using Blockchain and IPFS technologies
-- Decentralized system, with no central authority or single point of failure
-- Fast and easy verification process, with no need for intermediaries or third-party services
-- User-friendly interface for document upload and verification
-- Support for multiple document types and formats
+- **Robust Security**: Employs Blockchain and IPFS to safeguard document integrity.
+- **Decentralized Framework**: Removes reliance on a central authority, minimizing risks associated with single points of failure.
+- **Streamlined Verification**: Facilitates a swift verification process without intermediary involvement.
+- **Intuitive User Experience**: Offers a simple interface for uploading and verifying documents.
+- **Diverse Document Support**: Accepts a wide range of document types and formats.
 
-## Requirements
+## Prerequisites
 
-- Node.js and npm installed on your system
-- MetaMask Wallet
-- IPFS API (key and secret) you can get it from infura.io
+- Ensure Node.js and npm are installed on your system.
+- Set up a MetaMask Wallet for secure interactions.
+- Obtain IPFS API credentials (key and secret) from [Infura](https://infura.io).
 
-## Installation
+## Setup Instructions
 
-1. Clone this repository: 
-   ``https://github.com/DevAloshe/BlockChain-Based-Document-Verfication-With-IPFS.git``
+1. **Clone the Project Repository**:
+   ```bash
+   git clone https://github.com/DevAloshe/BlockChain-Based-Document-Verfication-With-IPFS.git
+   ```
 
+2. **Install Dependencies**:
+   Navigate into the project directory and install necessary packages:
+   ```bash
+   cd BlockChain-Based-Document-Verfication-With-IPFS
+   npm install
+   ```
 
-2. Install the required packages:
-  ``cd BlockChain-Based-Document-Verfication-With-IPFS``
-  `` npm install``
+3. **Deploy the Smart Contract**:
+   Utilize the Remix online IDE to deploy the `contract.sol`. After deployment, copy the contract address and insert it into the `app.js` file. Also, configure the network URL and network explorer URL as per your MetaMask settings.
 
-4. deploy the contract.sol using remixe online ide
-   after the deployment complete copy the contract address from remix and paste it in the app.js contract address field
-   you also need to specify the network url and the network explorer url you are working on ( you can get them from       metamask network settings)
-   
-5. Open the application in your browser using Live Server Extension .
-6. if you need to view the actual documents you have to create new infura account at ``infura.io`` and use the api id and secret provided by infura and paste them in the app.js where is the uploadToInfura function
+4. **Launch the Application**:
+   Use the Live Server extension to open the application in your browser.
 
-## Usage
+5. **Configure Infura for Document Viewing**:
+   To access the documents, create an account on [Infura](https://infura.io) and use the provided API ID and secret in the `app.js` file within the `uploadToInfura` function.
 
-1. The owner of the system must first add an exporter to the list of authorized parties. This is done by clicking on the "Add Exporter" button and entering the exporter's Metamask address.
-2. Upload a document to the system by clicking on the "Upload Document" button and selecting a file from your computer. The document will be encrypted and stored in the IPFS network, and its hash will be recorded in the Blockchain.
+## How to Use VerifiChain
 
-3. Verify a document by clicking on the "Verify Document" button and choose the document and click verify button. The system will retrieve the document from the IPFS network, decrypt it, and compare its hash with the one recorded in the Blockchain.
+1. **Authorize Exporters**: As the system owner, you need to add exporters by clicking the "Add Exporter" button and entering their MetaMask address.
 
-4. The system will display a message indicating whether the document is authentic or not.
+2. **Upload Your Document**: Click the "Upload Document" button, select the file you wish to upload, and proceed. The document will be encrypted and uploaded to IPFS, with its hash securely stored on the Blockchain.
 
-## License
+3. **Document Verification**: To verify a document, click the "Verify Document" button. Choose the document you want to verify and hit the verify button. The system will retrieve the document from IPFS, decrypt it, and compare its hash with the one stored on the Blockchain.
 
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+4. **Receive Verification Results**: The application will display whether the document is authentic or has been tampered with.
+
+## License Information
+
+This project operates under the MIT License. Please refer to the LICENSE.md file for further details.
 
 ## Acknowledgments
-- Metamask documentation
-- Solidity and Web3.js documentation
-- IPFS documentation
-- Truffle documentation
 
-
-
+- MetaMask Documentation, Solidity and Web3.js Resources, IPFS Documentation, Truffle Framework Guides
